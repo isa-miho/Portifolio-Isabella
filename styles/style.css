@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+:root{
+    --color-primary-1: #000000;
+    --color-primary-2: #4B0082;
+    --color-primary-3: #333333;
+    --color-primary-4: #6B8E23;
+    --color-primary-5: #C5A3FF;
+    --color-primary-6: #B5C99A;
+    --color-primary-7: #F2E6D9;
+    --color-primary-8: #F5F5F5;
+
+    --color-neutra-1: #7a7a7a;
+    --color-neutra-2: #efefef;
+}
+
+.btn-padrao{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-5);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px rgba(0,0, 0, 0.1);
+    transition: .3s ease;
+}
+
+.btn-padrao:hover{
+    background-color: var(--color-primary-4);
+}

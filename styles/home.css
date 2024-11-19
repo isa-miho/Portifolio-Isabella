@@ -1,0 +1,14 @@
+#home{
+    display: flex;
+    min-height: calc(100vh-91px);
+    position: relative;
+    justify-content: space-between;
+}
+
+.cta{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 3%;
+}
