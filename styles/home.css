@@ -12,3 +12,17 @@
     gap: 28px;
     margin-top: 3%;
 }
+.title{
+    font-size: 50px;
+    color: var(--color-primary-2);
+}
+.descricao{
+    font-size: 1.2rem;
+}
+.cta-buttons{
+    display: flex;
+    gap: 24px;
+}
+.cta-buttons a{
+    color: var(--color-neutra-2);
+}
