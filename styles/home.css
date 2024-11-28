@@ -1,14 +1,50 @@
-#home{
+#home {
     display: flex;
-    min-height: calc(100vh-91px);
-    position: relative;
     justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: var(--color-primary-8);
+    min-height: calc(100vh - 91px);
 }
 
-.cta{
-    width: 35%;
+.cta {
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 28px;
     margin-top: 3%;
+}
+
+.cta h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--color-primary-2);
+}
+
+.cta p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: var(--color-primary-3);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.cta-buttons a {
+    text-decoration: none;
+}
+
+.cta-buttons a .btn-padrao {
+    padding: 10px 14px;
+}
+
+.cta-buttons a#phone_btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: var(--color-primary-1);
 }
