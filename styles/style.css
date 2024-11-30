@@ -2,57 +2,66 @@
 @import url('home.css');
 
 :root {
-    --color-primary-1: #000000;
-    --color-primary-2: #4B0082;
-    --color-primary-3: #333333;
-    --color-primary-4: #6B8E23;
-    --color-primary-5: #C5A3FF;
-    --color-primary-6: #B5C99A;
-    --color-primary-7: #F2E6D9;
-    --color-primary-8: #F5F5F5;
+    --color-primary-1: #111011; /* Preto profundo */
+    --color-primary-2: #FFF5F5; /* Branco rosado */
+    --color-primary-3: #2F4858; /* Azul acinzentado */
+    --color-primary-4: #325077; /* Azul escuro */
+
+    --color-accent-1: #E51D66; /* Rosa vibrante */
+    --color-accent-2: #BD3689; /* Rosa médio */
+    --color-accent-3: #894A97; /* Roxo suave */
+    --color-accent-4: #55518F; /* Roxo escuro */
 
     --color-neutra-1: #7a7a7a;
     --color-neutra-2: #efefef;
 }
 
+
+
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-primary-8);
+    background: linear-gradient(135deg, var(--color-accent-1), var(--color-primary-3));
     color: var(--color-primary-1);
+    margin: 0;
+    font-family: 'Amarante', sans-serif;
 }
 
-header {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: var(--color-primary-5);
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, var(--color-accent-1), var(--color-primary-3));
+    color: var(--color-primary-2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background: linear-gradient(90deg, var(--color-accent-1), var(--color-primary-3));
+    color: var(--color-primary-2); /* Texto claro */
+    padding: 1rem;
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
 }
 
 .nav-list {
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 20px;
+    margin-left: auto; /* Empurra a lista para a direita */
 }
 
 .nav-link {
     text-decoration: none;
-    color: var(--color-primary-1);
-    font-weight: 600;
-    transition: color 0.3s ease;
+    color: var(--color-primary-2);
+    font-weight: bold;
 }
 
 .nav-link:hover {
-    color: var(--color-primary-4);
+    color: var(--color-accent-1);
 }
 
 .btn-padrao {
@@ -61,13 +70,14 @@ header {
     padding: 12px 20px;
     font-weight: 700;
     font-size: 14px;
-    background-color: var(--color-primary-5);
-    color: white;
+    background-color: var(--color-accent-1);
+    color: var(--color-primary-2);
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .btn-padrao:hover {
-    background-color: var(--color-primary-4);
+    background-color: var(--color-accent-2);
+    color: var(--color-primary-1);
 }
