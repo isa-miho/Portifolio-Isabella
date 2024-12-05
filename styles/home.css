@@ -1,13 +1,16 @@
 #home {
     display: flex;
-    justify-content: center; /* Centraliza os elementos horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    background: linear-gradient(90deg, var(--color-accent-1), var(--color-primary-3));
-    color: var(--color-primary-1);
+    justify-content: center; 
+    align-items: start;
     padding: 2rem;
-    min-height: calc(100vh - 91px);
-}
+    min-height: calc(90vh - 91px);
+    
 
+}
+/* .shape{
+    width: 100%;
+    background-color: aqua;
+} */
 
 .cta {
     padding: 2rem;
@@ -20,14 +23,14 @@
 .cta h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: var(--color-primary-1);
+    color: var(--color-primary-2);
 }
 
 .cta p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 30px;
-    color: var(--color-primary-1);
+    color: var(--color-primary-2);
 }
 
 .cta-buttons {
@@ -53,9 +56,115 @@
 }
 
 .cta .title {
-    color: var(--color-accent-1); /* Rosa vibrante */
+    color: var(--color-accent-1);
 }
 
 .descricao {
-    color: var(--color-primary-1);
+    color: var(--color-primary-2);
 }
+
+
+.nome,.nome::after {
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .nome::after {
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    content: 'IsabellaSawamura';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  .nome:hover::after {
+    animation: glitch_4011 1s;
+    text-shadow: 10 10px 10px black;
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px var(--color-accent-1), 3px 3px 0px var(--color-primary-4);
+    background-color: transparent;
+    border: 3px solid var(--color-accent-1);
+  }
+  
+  .nome:hover {
+    text-shadow: -1px -1px 0px var(--color-accent-1), 1px 1px 0px var(--color-primary-4);
+  }
+  
+  .nome:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-accent-1);
+    box-shadow: 0px 10px 10px -10px var(--color-accent-1);
+  }
+  
+  @keyframes glitch_4011 {
+    0% {
+      clip-path: var(--move1);
+      transform: translate(0px,-10px);
+    }
+  
+    10% {
+      clip-path: var(--move2);
+      transform: translate(-10px,10px);
+    }
+  
+    20% {
+      clip-path: var(--move3);
+      transform: translate(10px,0px);
+    }
+  
+    30% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    40% {
+      clip-path: var(--move5);
+      transform: translate(10px,-10px);
+    }
+  
+    50% {
+      clip-path: var(--move6);
+      transform: translate(-10px,10px);
+    }
+  
+    60% {
+      clip-path: var(--move1);
+      transform: translate(10px,-10px);
+    }
+  
+    70% {
+      clip-path: var(--move3);
+      transform: translate(-10px,10px);
+    }
+  
+    80% {
+      clip-path: var(--move2);
+      transform: translate(10px,-10px);
+    }
+  
+    90% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    100% {
+      clip-path: var(--move1);
+      transform: translate(0);
+    }
+  }
+  
+  
