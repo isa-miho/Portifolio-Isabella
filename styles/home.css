@@ -72,6 +72,7 @@
     color: white;
     background-color: transparent;
     position: relative;
+    font-family: 'Lora', sans-serif;
   }
   
   .nome::after {
@@ -89,6 +90,7 @@
     right: 0;
     bottom: 0;
     display: block;
+    font-family: 'Lora', sans-serif;
   }
   
   .nome:hover::after {
@@ -167,4 +169,28 @@
     }
   }
   
-  
+.welcome{
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* .shape{
+  background-color: var(--color-accent-3);
+  height: 25%;
+  width: 50%;
+  position: absolute;
+  border-radius: 35% 85% 5% 75%;
+  top: 1;
+  right: 7;
+  z-index: 3;
+} */
+
+.hero-content{
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
