@@ -1,89 +1,143 @@
 #home {
-    display: flex;
-    justify-content: center; 
-    align-items: start;
-    padding: 2rem;
-    min-height: calc(90vh - 91px);
-    
-
+  display: flex;
+  justify-content: center; 
+  align-items: start;
+  padding: 2rem;
+  min-height: calc(90vh - 91px);
+  
+  
 }
-/* .shape{
-    width: 100%;
-    background-color: aqua;
-} */
+
+.shape {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  position: relative; /* Adicione esta linha */
+}
+
+.elemento_azul {
+  width: 50%;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+
+.elemento_roxo {
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+}
+
+.estrela_rosa {
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 50px; /* Ajuste a posição conforme necessário */
+  z-index: 3;
+}
+
+.estrela_roxa {
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 100px; /* Ajuste a posição conforme necessário */
+  z-index: 2;
+}
+
+.semicirculo {
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 150px; /* Ajuste a posição conforme necessário */
+  z-index: 1;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+}
 
 .cta {
-    padding: 2rem;
-    max-width: 800px;
-    text-align: center;
-    gap: 28px;
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
+  gap: 28px;
 }
 
 
 .cta h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: var(--color-primary-2);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--color-primary-2);
 }
 
 .cta p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: var(--color-primary-2);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: var(--color-primary-2);
 }
 
 .cta-buttons {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .cta-buttons a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .cta-buttons a .btn-padrao {
-    align-items: center;
-    padding: 10px 14px;
+  align-items: center;
+  padding: 10px 14px;
 }
 
 .cta-buttons a#phone_btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1rem;
-    color: var(--color-primary-1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: var(--color-primary-1);
 }
 
 .cta .title {
-    color: var(--color-accent-1);
+  color: var(--color-accent-1);
+}
+.hero-content{
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
 }
 
 .descricao {
-    color: var(--color-primary-2);
+  color: var(--color-primary-2);
 }
 
 
 .nome,.nome::after {
-    padding: 10px 30px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: transparent;
-    position: relative;
-    font-family: 'Lora', sans-serif;
-  }
-  
-  .nome::after {
-    --move1: inset(50% 50% 50% 50%);
-    --move2: inset(31% 0 40% 0);
-    --move3: inset(39% 0 15% 0);
-    --move4: inset(45% 0 40% 0);
-    --move5: inset(45% 0 6% 0);
-    --move6: inset(14% 0 61% 0);
-    clip-path: var(--move1);
-    content: 'IsabellaSawamura';
+  padding: 10px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+  font-family: 'Lora', sans-serif;
+}
+
+.nome::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'IsabellaSawamura';
     position: absolute;
     top: 0;
     left: 0;
@@ -169,7 +223,7 @@
     }
   }
   
-.welcome{
+.inicio{
   width: 200px;
   height: 50px;
   display: flex;
@@ -178,19 +232,4 @@
 
 }
 
-/* .shape{
-  background-color: var(--color-accent-3);
-  height: 25%;
-  width: 50%;
-  position: absolute;
-  border-radius: 35% 85% 5% 75%;
-  top: 1;
-  right: 7;
-  z-index: 3;
-} */
 
-.hero-content{
-  align-items: center;
-  width: 100%;
-  margin-top: 100px;
-}
