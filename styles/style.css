@@ -1,61 +1,63 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('home.css');
-
+@import url(info.css);
+@import url(education.css);
+@import url(work.css);
+@import url(habilidades.css);
 :root {
     --color-primary-1: #111011; /* Preto profundo */
     --color-primary-2: #FFF5F5; /* Branco rosado */
     --color-primary-3: #2F4858; /* Azul acinzentado */
     --color-primary-4: #325077; /* Azul escuro */
 
-    --color-accent-1: #E51D66; /* Rosa vibrante */
-    --color-accent-2: #BD3689; /* Rosa médio */
-    --color-accent-3: #894A97; /* Roxo suave */
-    --color-accent-4: #55518F; /* Roxo escuro */
+    --color-primary-5: #E51D66; /* Rosa vibrante */
+    --color-primary-6: #BD3689; /* Rosa médio */
+    --color-primary-7: #894A97; /* Roxo suave */
+    --color-primary-8: #55518F; /* Roxo escuro */
 
     --color-neutra-1: #7a7a7a;
     --color-neutra-2: #efefef;
 }
-
-
-
-body {
-    background-color: var(--color-primary-1);
-    color: var(--color-primary-2);
-    margin: 0;
-    font-family: 'Lora', sans-serif;
+a{
+  text-decoration: none;
 }
 
-.menu {
+
+body{
+    background-color: var(--color-primary-1);
+    color: var(--color-primary-2);
+    margin:0;
+    font-family: 'Lora', sans-serif;
+    
+}
+
+.content{
+  padding: 40px 10%;
+}
+
+.menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    color: var(--color-primary-2);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header {
-    background-color:var(--color-primary-1);
-    color: var(--color-primary-2);
-    padding: 1rem;
-}
-
-.nav-bar {
-    width: 100%;
+.nav-bar{
+    width:100%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: right;
+    gap: 20px;
 }
 
-.nav-list {
+.nav-list{
     display: flex;
     list-style: none;
     gap: 20px;
-
 }
 
-.nav-link {
+.nav-link{
     margin: 10px;
     gap: 20px;
     text-decoration: none;
@@ -64,27 +66,8 @@ header {
 }
 
 .nav-link:hover {
-    color: var(--color-accent-1);
+    color: var(--color-primary-6);
 }
-
-.btn-padrao {
-    border: none;
-    display: inline-block;
-    padding: 12px 20px;
-    font-weight: 700;
-    font-size: 14px;
-    background-color: var(--color-accent-1);
-    color: var(--color-primary-2);
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-padrao:hover {
-    background-color: var(--color-accent-2);
-    color: var(--color-primary-1);
-}
-
 
 .ui-btn {
     --btn-default-bg: #010314;
@@ -95,17 +78,15 @@ header {
     --btn-animation-duration: 1.2s;
     --btn-shadow-color: rgba(0, 0, 0, 0.137);
     --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
-    --hover-btn-color: var(--color-accent-1);
+    --hover-btn-color: var(--color-primary-5);
     --default-btn-color: #fff;
     --font-size: 16px;
     /* 👆 this field should not be empty */
     --font-weight: 600;
     --font-family: 'Lora', sans-serif;
-  }
-  
-  /* button settings 👆 */
-  
-  .ui-btn {
+}
+
+.ui-btn {
     box-sizing: border-box;
     padding: var(--btn-padding);
     display: flex;
@@ -120,39 +101,40 @@ header {
     box-shadow: var(--btn-shadow);
     border-radius: 10px;
     border: 2px solid #3a2a36;
-  }
+    margin-right: 25px;
+}
   
-  .ui-btn span {
+.ui-btn span {
     letter-spacing: var(--btn-letter-spacing);
     transition: var(--btn-transition);
     box-sizing: border-box;
     position: relative;
     background: inherit;
-  }
+}
   
-  .ui-btn span::before {
+.ui-btn span::before {
     box-sizing: border-box;
     position: absolute;
     content: "";
     background: inherit;
-  }
+}
   
-  .ui-btn:hover, .ui-btn:focus {
+.ui-btn:hover, .ui-btn:focus {
     background: var(--btn-default-bg);
     box-shadow: 0px 0px 10px 0px rgba(189,54,137,0.5);
-    border: 2px solid var(--color-accent-1);
+    border: 2px solid var(--color-primary-5);
     ;
-  }
+}
   
-  .ui-btn:hover span, .ui-btn:focus span {
+.ui-btn:hover span, .ui-btn:focus span {
     color: var(--hover-btn-color);
-  }
+}
   
   .ui-btn:hover span::before, .ui-btn:focus span::before {
     animation: chitchat linear both var(--btn-animation-duration);
-  }
+}
   
-  @keyframes chitchat {
+@keyframes chitchat {
     0% {
       content: "#";
     }
@@ -245,4 +227,72 @@ header {
       content: "";
       right: 0;
     }
+}
+
+
+/* Para telas menores que 1024px */
+@media (max-width: 1024px) {
+  .menu {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
   }
+
+  .nav-bar {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .nav-list {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .ui-btn {
+      align-self: flex-end;
+      margin-right: 0;
+      margin-top: 15px;
+  }
+}
+
+/* Para telas menores que 720px */
+@media (max-width: 720px) {
+  .menu {
+      padding: 10px;
+  }
+
+  .nav-link {
+      font-size: 14px;
+  }
+
+  .ui-btn {
+      font-size: 14px;
+      padding: 10px 15px;
+      border-radius: 8px;
+  }
+
+  .nav-list {
+      gap: 8px;
+  }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+  .menu {
+      padding: 8px;
+  }
+
+  .nav-link {
+      font-size: 12px;
+  }
+
+  .ui-btn {
+      font-size: 12px;
+      padding: 8px 10px;
+      border-radius: 5px;
+  }
+
+  .nav-list {
+      gap: 5px;
+  }
+}

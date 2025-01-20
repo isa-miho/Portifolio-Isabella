@@ -3,70 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Portifolio</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"> </script>
+    
 </head>
 <body>
     <header class="menu">
         <nav class="nav-bar">
             <ul class="nav-list">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="#info" class="nav-link">Sobre mim</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#habilidades" class="nav-link">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a href="#education" class="nav-link">Educação</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#work" class="nav-link">Trabalhos</a>
+                    <a href="#work" class="nav-link">Projetos</a>
                 </li>
             </ul>
-            <button class="ui-btn">
-            <span>
-                Entre em contato
-            </span>
+            <button class="ui-btn" >
+                <a href="https://wa.me/qr/6HPLCT55GEEHB1">
+                    <span>Entre em contato</span>
+                </a>
+                    
             </button>
         </nav>
     </header>
-
-
     <main class="content">
-        <section id="home">
-            <div class="shape">
-                <div class="elemento_azul">
-                  <img src="imagens/elemento_azul.png" alt="">
+        <section id="info">
+            <div class="carousel">
+                <input type="radio" name="carousel" id="slide1" checked>
+                <input type="radio" name="carousel" id="slide2">
+                <input type="radio" name="carousel" id="slide3">
+                <div class="slides">
+                  <div class="slide">
+                    <img src="Imgs/img1.jpg" alt="Slide 1">
+                  </div>
+                  <div class="slide">
+                    <img src="Imgs/img2.jpg" alt="Slide 2">
+                  </div>
+                  <div class="slide">
+                    <img src="Imgs/img4.jpg" alt="Slide 3">
+                  </div>
                 </div>
-                <div class="elemento_roxo">
-                  <img src="imagens/elemento_roxo.png" alt="">
+                <div class="navigation">
+                  <label for="slide1"></label>
+                  <label for="slide2"></label>
+                  <label for="slide3"></label>
                 </div>
-                <div class="estrela_rosa">
-                  <img src="imagens/estrela_rosa.png" alt="">
-                </div>
-                <div class="estrela_roxa">
-                  <img src="imagens/estrela_roxa.png" alt="">
-                </div>
-                <div class="semicirculo">
-                  <img src="imagens/semicirculo.png" alt="">
-                </div>
-              </div>
-                <div class="cta">
-                  <section id="slider">
-                    <div class="hero-content">                     
+            </div>
+            <div class="cta">
+                <section id="slider">
+                    <div class="hero-content">
                         <button class="nome">
-                        Isabella Sawamura
+                            Isabella Sawamura
                         </button>
-                        <h2 class="inicio">Bem-vindo!</h2>
+                        <h1 class="inicio">Welcome to my <span>portfolio</span>!</h1>
                         <p class="inicio">Explore meus projetos e experiências profissionais.</p>
+                        <p class="descricao">
+                            Sou uma profissional em constante evolução, gosto de soluções práticas e funcionais. Aqui você encontrará meus projetos e experiências que refletem minha dedicação, visão estratégica e desejo de fazer a diferença. Vamos construir algo incrível juntos?
+                        </p>
                     </div>
-                  </section>
-                    <p class="descricao">
-                        Bem-vindo ao meu portfólio! Sou uma profissional em constante evolução, gosto de soluções práticas e funcionais. Aqui você encontrará meus projetos e experiências que refletem minha dedicação, visão estratégica e desejo de fazer a diferença. Vamos construir algo incrível juntos?
-                    </p>
+                </section>
+            </div>
+        </section>
+        
+        <section id="habilidades">
+            <h2 class="section-title">Skills</h2>
+            <div class="area-cards">
+                
+                <div class="container noselect">
+                <div class="canvas">
+                    <div class="tracker tr-1"></div>
+                    <div class="tracker tr-2"></div>
+                    <div class="tracker tr-3"></div>
+                    <div class="tracker tr-4"></div>
+                    <div class="tracker tr-5"></div>
+                    <div class="tracker tr-6"></div>
+                    <div class="tracker tr-7"></div>
+                    <div class="tracker tr-8"></div>
+                    <div class="tracker tr-9"></div>
+                    <div id="card">
+                    <div class="card-content">
+                        <div class="card-glare"></div>
+                        <div class="cyber-lines">
+                        <span></span><span></span><span></span><span></span>
+                        </div>
+                        <p id="prompt"><i class="fa-brands fa-python"></i></p>
+                        <div class="title">Básico<br /></div>
+                        <div class="glowing-elements">
+                        <div class="glow-1"></div>
+                        <div class="glow-2"></div>
+                        <div class="glow-3"></div>
+                        </div>
+                        <div class="subtitle">
+                        
+                        <span class="highlight">Python</span>
+                        </div>
+                        <div class="card-particles">
+                        <span></span><span></span><span></span> <span></span><span></span
+                        ><span></span>
+                        </div>
+                        <div class="corner-elements">
+                        <span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="scan-line"></div>
+                    </div>
+                    </div>
                 </div>
+                </div>
+                <div class="container noselect">
+                <div class="canvas">
+                    <div class="tracker tr-1"></div>
+                    <div class="tracker tr-2"></div>
+                    <div class="tracker tr-3"></div>
+                    <div class="tracker tr-4"></div>
+                    <div class="tracker tr-5"></div>
+                    <div class="tracker tr-6"></div>
+                    <div class="tracker tr-7"></div>
+                    <div class="tracker tr-8"></div>
+                    <div class="tracker tr-9"></div>
+                    <div id="card">
+                    <div class="card-content">
+                        <div class="card-glare"></div>
+                        <div class="cyber-lines">
+                        <span></span><span></span><span></span><span></span>
+                        </div>
+                        <p id="prompt"><i class="fa-brands fa-figma"></i></p>
+                        <div class="title">Básico<br /></div>
+                        <div class="glowing-elements">
+                        <div class="glow-1"></div>
+                        <div class="glow-2"></div>
+                        <div class="glow-3"></div>
+                        </div>
+                        <div class="subtitle">
+                        
+                        <span class="highlight">Figma</span>
+                        </div>
+                        <div class="card-particles">
+                        <span></span><span></span><span></span> <span></span><span></span
+                        ><span></span>
+                        </div>
+                        <div class="corner-elements">
+                        <span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="scan-line"></div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="container noselect">
+                <div class="canvas">
+                    <div class="tracker tr-1"></div>
+                    <div class="tracker tr-2"></div>
+                    <div class="tracker tr-3"></div>
+                    <div class="tracker tr-4"></div>
+                    <div class="tracker tr-5"></div>
+                    <div class="tracker tr-6"></div>
+                    <div class="tracker tr-7"></div>
+                    <div class="tracker tr-8"></div>
+                    <div class="tracker tr-9"></div>
+                    <div id="card">
+                    <div class="card-content">
+                        <div class="card-glare"></div>
+                        <div class="cyber-lines">
+                        <span></span><span></span><span></span><span></span>
+                        </div>
+                        <p id="prompt"><i class="fa-brands fa-css3-alt"></i></p>
+                        <div class="title">Iniciante<br /></div>
+                        <div class="glowing-elements">
+                        <div class="glow-1"></div>
+                        <div class="glow-2"></div>
+                        <div class="glow-3"></div>
+                        </div>
+                        <div class="subtitle">
+                        
+                        <span class="highlight">CSS</span>
+                        </div>
+                        <div class="card-particles">
+                        <span></span><span></span><span></span> <span></span><span></span
+                        ><span></span>
+                        </div>
+                        <div class="corner-elements">
+                        <span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="scan-line"></div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="container noselect">
+                <div class="canvas">
+                    <div class="tracker tr-1"></div>
+                    <div class="tracker tr-2"></div>
+                    <div class="tracker tr-3"></div>
+                    <div class="tracker tr-4"></div>
+                    <div class="tracker tr-5"></div>
+                    <div class="tracker tr-6"></div>
+                    <div class="tracker tr-7"></div>
+                    <div class="tracker tr-8"></div>
+                    <div class="tracker tr-9"></div>
+                    <div id="card">
+                    <div class="card-content">
+                        <div class="card-glare"></div>
+                        <div class="cyber-lines">
+                        <span></span><span></span><span></span><span></span>
+                        </div>
+                        <p id="prompt"><i class="fa-brands fa-html5"></i></p>
+                        <div class="title">Iniciante<br /></div>
+                        <div class="glowing-elements">
+                        <div class="glow-1"></div>
+                        <div class="glow-2"></div>
+                        <div class="glow-3"></div>
+                        </div>
+                        <div class="subtitle">
+                        
+                        <span class="highlight">HTML</span>
+                        </div>
+                        <div class="card-particles">
+                        <span></span><span></span><span></span> <span></span><span></span
+                        ><span></span>
+                        </div>
+                        <div class="corner-elements">
+                        <span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="scan-line"></div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <section id="education">
+            <h2 class="section-title">Educação</h2>
+            <div class="escolaridade">
+                <p class="instituto">2022-2024 Ensino Médio</p>
+                <p class="texto">Escola Estadual Rui Barbosa</p>
+            </div>
+            <div class="escolaridade">
+                <p class="instituto">2018-2024 Curso de Inglês</p>
+                <p class="texto">Fundação Richard Hugh Fisk</p>
+            </div>
+            <div class="escolaridade">
+                <p class="instituto">2024 PCAP - Programming Essentials in Python</p>
+                <p class="texto">CISCO Networking Academy</p>
+            </div>
+            <div class="escolaridade">
+                <p class="instituto">2024 JavaScript 1 - Hub Academy</p>
+                <p class="texto">CISCO Networking Academy</p>
+            </div>
+            <div class="escolaridade">
+                <p class="instituto">2024-2025 Técnico de Desenvolvimento de Sistemas</p>
+                <p class="texto">Senac Hub Academy</p>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projeto-container">
+                <div class="projeto-box">
+                    <img src="Imgs/Captura de Tela (10).png" alt="">
+                    <div class="projeto-layer">
+                        <h3>Landing Page Lanchonete</h3>
+                            <a href="https://github.com/isa-miho/Landing_page_lanchonete">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

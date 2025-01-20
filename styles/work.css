@@ -1,0 +1,133 @@
+#work{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.projeto-container{
+    width: 100%;
+    display: grid;
+    gap: 1.2rem;
+    margin-top: 30px;
+
+}
+.projeto-box{
+    width: 100%;
+    position: relative;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 2.6rem var(--color-primary-8);
+    overflow: hidden;
+    display: flex;
+}
+.projeto-box img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+.projeto-box img:hover{
+    transform: scale(1.1);
+
+}
+.projeto-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(transparent, #55518F);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.4rem ;
+    transform: translateY(20rem);
+    transition: 0.5s ease;
+
+}
+.projeto-box:hover .projeto-layer{
+    transform: translateY(0);
+}
+.projeto-layer h4{
+    font-size: 1.8rem;
+    position: absolute;
+
+}
+.projeto-layer a{
+    margin-top: 80px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--color-primary-8);
+}
+
+.projeto-layer i {
+    text-decoration: none;
+    color: var(--color-primary-6);
+}
+
+@media screen and (max-width: 1024px) {
+    .projeto-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .projeto-layer h4 {
+        font-size: 1.6rem; 
+    }
+
+    .projeto-layer a {
+        width: 2.5rem;
+        height: 2.5rem; 
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #work {
+        padding: 1rem; 
+    }
+
+    .projeto-container {
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
+
+    .projeto-layer h4 {
+        font-size: 1.4rem; 
+    }
+
+    .projeto-layer a {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #work {
+        padding: 0.5rem;
+    }
+
+    .projeto-container {
+        gap: 0.8rem; 
+    }
+
+    .projeto-box img {
+        object-fit: cover; 
+    }
+
+    .projeto-layer h4 {
+        font-size: 1.2rem; 
+    }
+
+    .projeto-layer a {
+        width: 1.5rem; 
+        height: 1.5rem;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+}
